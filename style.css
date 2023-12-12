@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dhurjati&family=Josefin+Sans:ital,wght@1,700&family=Teko:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Teko';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Josefin Sans' ;
+    font-size: 45px;
+    color:crimson;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    font-size: 23px;
+    color:greenyellow;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color:white
+}
+.nav-responsive{
+    background-color:white;
+    color:black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCIÓN INICIO */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.1), rgba(30,35,38,1)),url(images/Captura\ de\ pantalla\ 2023-12-11\ 130407.png);
+    background-size: cover;
+    height: 100vh;
+    color:whitesmoke;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 15px 20px;
+    background-color:#000310;
+    max-width: 350px;
+    margin:auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 5px solid red;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 80%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Josefin Sans';
+}
+.inicio .contenido-banner h2{
+    font-size: 25px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: yellowgreen;
+}
+/* SECCIÓN ACERCA DE MI */
+.acercademi{
+    background-color: #000310;
+    color:whitesmoke;
+    padding: 15px 20px;
+}
+.acercademi .contenido-seccion{
+    max-width: 1900px;
+    margin: auto;
+}
+.acercademi h2{
+    font-size: 48px;
+    font-family: 'Teko';
+    text-align: center;
+    padding: 20px 0;
+}
+.acercademi .contenido-seccion p{
+    font: 18px;
+    font-size: 28px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.acercademi .contenido-seccion p span{
+    color:crimson;
+    font-weight: bold;
+}
+.acercademi .fila{
+    display: flex;
+}
+.acercademi .fila .col
+{
+    width: 40%;
+}
+.acercademi .fila .col h3{
+    font-size: 38px;
+    font-family: 'Teko';
+    margin-bottom: 10px;
+}
+.acercademi .fila .col ul{
+    list-style: none;
+    font-size: 25px;
+}
+.acercademi .fila .col ul li{
+    margin: 10px 0;
+}
+.acercademi .fila .col ul li strong{
+    display: inline-block;
+    width: 100px;
+    font-size: 25px;
+}
+.acercademi .fila .col .contenedor-intereses{
+    display:flex;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+.acercademi .fila .col .contenedor-intereses .intereses{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;
+}
+.acercademi .fila .col .contenedor-intereses .intereses:hover{
+    background-color: rgb(4, 72, 34);
+}
+.acercademi .fila .col .contenedor-intereses .intereses i{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+/* SECCIÓN HABILIDADES */
+.habilidades{
+    background-color: #00051a;
+    color:whitesmoke;
+    font-size: 25px;
+    padding: 15px 20px;
+}
+.habilidades .contenido-seccion{
+    max-width: 1900px;
+    margin: auto;
+}
+.habilidades h2{
+    font-size: 48px;
+    font-family: 'Teko';
+    text-align: center;
+    padding: 20px 0;
+}
+.habilidades .fila{
+    display: flex;
+}
+.habilidades .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.habilidades .fila .col h3{
+    font-size: 38px;
+    font-family: 'Teko';
+    margin-bottom: 10px;
+}
+.habilidades .habilidad > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.habilidades .habilidad .barra-habilidad{
+    height: 8px;
+    width: 80%;
+    background-color: #000000;
+    position: relative;
+    margin-bottom: 30px;
+}
+.habilidades .habilidad .progreso{
+    background-color: red;
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.habilidades .habilidad .barra-habilidad span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(9, 45, 0);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.habilidades .habilidad .java{
+    width: 0%;
+    animation: 5s java forwards;
+}
+@keyframes java {
+    0%{width: 0%;}
+    100%{width: 30%;}
+}
+.habilidades .habilidad .CSharp{
+    width: 0%;
+    animation: 5s CSharp forwards;
+}
+@keyframes CSharp {
+    0%{width: 0%;}
+    100%{width: 35%;}
+}
+.habilidades .habilidad .Cmasmas{
+    width: 0%;
+    animation: 5s Cmasmas forwards;
+}
+@keyframes Cmasmas {
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+.habilidades .habilidad .htmlcss{
+    width: 0%;
+    animation: 5s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+
+.habilidades .habilidad .comunicacion{
+    width: 0%;
+    animation: 5s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+.habilidades .habilidad .trabajoequipo{
+    width: 0%;
+    animation: 5s trabajoequipo forwards;
+}
+@keyframes trabajoequipo{
+    0%{width: 0%;}
+    100%{width: 45%;}
+}
+.habilidades .habilidad .creatividad{
+    width: 0%;
+    animation: 5s creatividad forwards;
+}
+@keyframes creatividad{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.habilidades .habilidad .dedicacion{
+    width: 0%;
+    animation: 5s dedicacion forwards;
+}
+@keyframes dedicacion{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+/* SECCIÓN FORMACIÓN ACADÉMICA */
+.formacionacademica{
+    background-color: #111522;
+    color:whitesmoke;
+    font-size: 18px;
+    padding: 15px 20px;
+}
+.formacionacademica .contenido-seccion{
+    max-width: 1900px;
+    margin:auto;
+}
+.formacionacademica h2{
+    font-size: 48px;
+    font-family: 'Teko';
+    text-align: center;
+    padding: 20px 0;
+}
+.formacionacademica .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.formacionacademica .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.formacionacademica .fila .col h3{
+    font-size: 28px;
+    font-family: 'Josefin Sans';
+    margin-bottom: 25px;
+}
+.formacionacademica .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+.formacionacademica .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+.formacionacademica .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position:relative;
+}
+.formacionacademica .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.formacionacademica .fila .item .escuela{
+    color: crimson;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.formacionacademica .fila .item .fecha{
+    display:block;
+    color:yellowgreen;
+    margin-bottom: 10px;
+}
+.formacionacademica .fila .item p{
+    line-height: 24px;
+}
+.formacionacademica .fila .izq{
+    border-right: 2px solid white;
+    margin-right: 20px;
+}
+.formacionacademica .fila .der{
+    border-left: 2px solid white;
+    margin-left: 20px;
+}
+.formacionacademica .fila .item .conectori{
+    height: 2px;
+    background-color: #000310;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.formacionacademica .fila .item .conectori .circuloi{
+    display:block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    float:right;
+    position: relative;
+    bottom: 4px;
+}
+.formacionacademica .fila .item .conectord{
+    height: 2px;
+    background-color: #000310;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.formacionacademica .fila .item .conectord .circulod{
+    display:block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    float:right;
+    position: relative;
+    bottom: 4px;
+}
+/* SECCIÓN MEDIOS DE CONTACTO */
+.medioscontacto{
+    background-image: url(images/Captura\ de\ pantalla\ 2023-12-11\ 130326.png);
+    background-color: #1e2326;
+    color:white;
+    padding: 15px 20px;
+}
+.medioscontacto .contenido-seccion{
+    max-width: 1900px;
+    margin: auto;
+}
+.medioscontacto h2{
+    font-size: 48px;
+    font-family: 'Teko';
+    text-align: center;
+    padding: 20px 0;
+}
+.medioscontacto .fila{
+    display: flex;
+}
+.medioscontacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.medioscontacto .col input, .medioscontacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border:none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: whitesmoke;
+    font-size: 24px;
+}
+.medioscontacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 20px;
+    color:white;
+    position: relative;
+    z-index: 10;
+}
+.medioscontacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(0, 60, 0);
+    z-index: -1;
+    transition: 1s;
+}
+.medioscontacto button:hover .overlay{
+    width: 100%;
+}
+.medioscontacto .col img{
+    width: 100%;
+}
+.medioscontacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 20px;
+}
+.medioscontacto .col .info ul{
+    list-style: none;
+}
+.medioscontacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.medioscontacto .col .info ul li i{
+    color: white;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #252A2E;
+    color: white;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
